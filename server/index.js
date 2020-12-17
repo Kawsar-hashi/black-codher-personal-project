@@ -14,11 +14,12 @@ mongoose.connect(
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-  }
+  }. then ()
 );
 
-app.use(bodyParser.json());
-
+app.use(bodyParser.json({limit: "30mb", extended : true}));
+app.use(bodyParser.urlencoded({limit: "30mb", extended : true}));
+app.use(cors());
 // IMPORT YOUR ROUTES
 require('./routes/usersRoutes')(app);
 
