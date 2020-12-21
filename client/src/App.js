@@ -1,75 +1,59 @@
-import React, { useState, useEffect } from 'react';
-import Home from '../src/HomePage/Home.js';
-import Form from '../src/HomePage/Form';
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Home from '../src/components/homepage/Home';
+import About from '../src/components/homepage/About';
 
-// SERVICES
-import userService from './services/userService';
-import { BrowserRouter } from 'react-router-dom';
 
-function App() {
-  const [users, setusers] = useState(null);
 
-  useEffect(() => {
-    if (!users) {
-      getusers();
-    }
-  });
 
-  const getusers = async () => {
-    let res = await userService.getAll();
-    setusers(res);
-  };
 
-  const renderUser = (user) => {
-    return (
-      <li key={user._id}>
-        <h3>
-          {`${user.first_name} 
-          ${user.last_name}`}
-        </h3>
-        <p>{user.location}</p>
-      </li>
-    );
-  };
-
+export default function App() {
   return (
+    <Router>
+      <div>
+        <nav>
+          <ul>
+              <div className= "container">
+                  <p>router is working</p>
 
+              </div>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/signup">SignUp</Link>
+            </li>
+          </ul>
+        </nav>
 
-    <div>
-      <ul>
-        {users && users.length > 0 ? (
-          users.map((user) => renderUser(user))
-        ) : (
-          <p>No users found</p>
-        )}
-        <h1>Welcome to Setle.
-        </h1>
-        <h2>
-          A space where you can unwind play games and quizes with your mates
-        </h2>
-      </ul>
-    </div>
+        <Switch>
+          <Route path="/Home">
+            <About />
+          </Route>
+          <Route path="/About">
+            <Users />
+          </Route>
+          <Route path="/SignUp">
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
-
-const App = (props) => {
-
-  const []
-
+function Home() {
+  return <h2>Home</h2>;
 }
 
-  
-return (
-  <BrowserRouter>
-  <Route exact path="/home" render={() => (
-        <>
-          <Home />
-        </>
-      )} />
-  </BrowserRouter>
-) 
+function About() {
+  return <h2>About</h2>;
+}
 
+function Users() {
+  return <h2>Users</h2>;
+}
 export default App;
-
-

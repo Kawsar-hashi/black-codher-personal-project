@@ -23,7 +23,7 @@ app.use(cors());
 // IMPORT YOUR ROUTES
 require('./routes/usersRoutes')(app);
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`app running on port ${PORT}`);
 });
