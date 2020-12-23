@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './Users';
+import App from './App';
 import reportWebVitals from './reportWebVitals'
-
+import Home from '../src/components/homepage/Home'
 
 
 

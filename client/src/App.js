@@ -2,21 +2,20 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from '../src/components/homepage/Home';
 import About from '../src/components/homepage/About';
+import SignUp from '../src/components/homepage/SignUp';
+import Navbar from '../src/components/homepage/NavBar';
 
 
 
 
 
-export default function App() {
+function App() {
   return (
     <Router>
       <div>
         <nav>
           <ul>
-              <div className= "container">
-                  <p>router is working</p>
-
-              </div>
+              <Navbar />
             <li>
               <Link to="/">Home</Link>
             </li>
@@ -24,20 +23,26 @@ export default function App() {
               <Link to="/about">About</Link>
             </li>
             <li>
-              <Link to="/signup">SignUp</Link>
+              <Link to="/SignUp">SignUp</Link>
             </li>
           </ul>
+          <div>
+              <h1>
+                  Welcome to Setle
+              </h1>
+          </div>
         </nav>
 
         <Switch>
-          <Route path="/Home">
-            <About />
+          <Route exact path="/">
+            <Home/>
           </Route>
           <Route path="/About">
-            <Users />
+           <About />
           </Route>
+         
           <Route path="/SignUp">
-            <Home />
+            <SignUp />
           </Route>
         </Switch>
       </div>
