@@ -1,7 +1,7 @@
 import React from 'react';
 import './Button.css';
 import { Link } from 'react-router-dom';
-import { on } from 'nodemon';
+
 
 const STYLES =['btn--primary', 'btn--outline']
 
@@ -20,8 +20,10 @@ export const Button = ({children, type, onClick, buttonStyle , buttonSize
             onClick={onClick}
             type={type}
             >
-                {children} //render whatever i put in the button//
+                {children} 
             </button>
+
+            <Button>Get Started</Button>
         </Link>
     )
 } ;

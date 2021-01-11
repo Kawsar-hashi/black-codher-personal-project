@@ -17,13 +17,13 @@ function App() {
           <ul>
               <Navbar />
             <li>
-              <Link to="/">Home</Link>
+              {/* <Link to="/">Home</Link>
             </li>
             <li>
               <Link to="/about">About</Link>
             </li>
             <li>
-              <Link to="/SignUp">SignUp</Link>
+              <Link to="/SignUp">SignUp</Link> */}
             </li>
           </ul>
           <div>
