@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Home from '../src/components/homepage/Home';
+import Home from '../src/components/homepage/Pages/Home';
 import About from '../src/components/homepage/About';
 import SignUp from '../src/components/homepage/SignUp';
 import Navbar from '../src/components/homepage/NavBar';
+import Hero from '../src/components/homepage/Hero';
+import './App.css';
 
 
 
@@ -27,14 +29,12 @@ function App() {
             </li>
           </ul>
           <div>
-              <h1>
-                  Welcome to Setle
-              </h1>
+              
           </div>
         </nav>
 
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/" exact component= {Home}>
             <Home/>
           </Route>
           <Route path="/About">
