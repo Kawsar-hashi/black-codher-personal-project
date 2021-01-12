@@ -9,7 +9,30 @@ function Cards() {
             <div className="cards__container">
                 <div classname="cards__wrapper">
                     <ul className="cards__items">
-                       <CardItem />
+                       <CardItem 
+                       src="images/img-9.jpg"
+                       text="explore"
+                       label="Game"
+                       path='/game'
+                       />
+                         <CardItem 
+                       src="images/img-9.jpg"
+                       text="explore"
+                       label="Game"
+                       path='/game'
+                       />
+                         <CardItem 
+                       src="images/img-9.jpg"
+                       text="explore"
+                       label="Game"
+                       path='/Quiz'
+                       />
+                         <CardItem 
+                       src="images/img-9.jpg"
+                       text="explore"
+                       label="Game"
+                       path='/Quiz'
+                       />
                     </ul>
                 </div>
             </div>
@@ -17,4 +40,4 @@ function Cards() {
     )
 }
 
-export default Cards
+export default Cards;
