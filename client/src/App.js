@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from '../src/components/homepage/Pages/Home';
 import About from '../src/components/homepage/About';
-import SignUp from '../src/components/homepage/SignUp';
+import SignUp from './components/homepage/Pages/SignUp';
 import Navbar from '../src/components/homepage/NavBar';
-import Hero from '../src/components/homepage/Hero';
+// import Hero from '../src/components/homepage/Hero';
 import './App.css';
+import Login from "./Containers/Login";
 
 
 
@@ -19,13 +20,16 @@ function App() {
           <ul>
               <Navbar />
             <li>
-              {/* <Link to="/">Home</Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
               <Link to="/about">About</Link>
             </li>
             <li>
-              <Link to="/SignUp">SignUp</Link> */}
+              <Link to="/SignUp">SignUp</Link>
+            </li>
+            <li>
+              <Link to="/login">Login</Link>
             </li>
           </ul>
           <div>
@@ -39,6 +43,9 @@ function App() {
           </Route>
           <Route path="/About">
            <About />
+          </Route>
+          <Route exact path="/login">
+          <Login />
           </Route>
          
           <Route path="/SignUp">
