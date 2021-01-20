@@ -6,7 +6,7 @@ import SignUp from './components/homepage/Pages/SignUp';
 import Navbar from '../src/components/homepage/NavBar';
 // import Hero from '../src/components/homepage/Hero';
 import './App.css';
-import Login from "./Containers/Login";
+
 
 
 
@@ -19,7 +19,7 @@ function App() {
         <nav>
           <ul>
               <Navbar />
-            <li>
+            {/* <li>
               <Link to="/">Home</Link>
             </li>
             <li>
@@ -29,8 +29,8 @@ function App() {
               <Link to="/SignUp">SignUp</Link>
             </li>
             <li>
-              <Link to="/login">Login</Link>
-            </li>
+              
+            </li> */}
           </ul>
           <div>
               
@@ -44,8 +44,8 @@ function App() {
           <Route path="/About">
            <About />
           </Route>
-          <Route exact path="/login">
-          <Login />
+          <Route exact path="/SignUp">
+          <SignUp />
           </Route>
          
           <Route path="/SignUp">

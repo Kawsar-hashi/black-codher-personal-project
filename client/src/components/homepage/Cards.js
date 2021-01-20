@@ -11,28 +11,18 @@ function Cards() {
                     <ul className="cards__items">
                        <CardItem 
                        src="images/img-9.jpg"
-                       text="explore"
+                       text="Noughts and Crosses"
                        label="Game"
                        path='/game'
                        />
+                         
                          <CardItem 
-                       src="images/img-9.jpg"
-                       text="explore"
-                       label="Game"
-                       path='/game'
-                       />
-                         <CardItem 
-                       src="images/img-9.jpg"
-                       text="explore"
-                       label="Game"
+                       src="images/img-8.jpg"
+                       text="Test your Knowledge"
+                       label="Quiz"
                        path='/Quiz'
                        />
-                         <CardItem 
-                       src="images/img-9.jpg"
-                       text="explore"
-                       label="Game"
-                       path='/Quiz'
-                       />
+                         
                     </ul>
                 </div>
             </div>

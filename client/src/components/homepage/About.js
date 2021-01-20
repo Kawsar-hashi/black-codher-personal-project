@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 class About extends Component {
     render() {
         return (
@@ -15,3 +16,4 @@ Welcome to Setle. An app designed by Kawsar Hashi as part of the Black Codher Bo
 }
 
 export default About;
+
