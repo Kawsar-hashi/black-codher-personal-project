@@ -26,6 +26,7 @@ module.exports = (app) => {
     });
   });
 
+
   app.delete(`/api/user/:id`, async (req, res) => {
     const { id } = req.params;
 

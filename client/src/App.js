@@ -6,7 +6,8 @@ import SignUp from './components/homepage/Pages/SignUp';
 import Navbar from '../src/components/homepage/NavBar';
 // import Hero from '../src/components/homepage/Hero';
 import './App.css';
-
+//import Quiz from '../src/components/homepage/Pages/Quiz';
+import Quiz from '../src/components/homepage/Pages/Quiz_New';
 
 
 
@@ -47,7 +48,12 @@ function App() {
           <Route exact path="/SignUp">
           <SignUp />
           </Route>
-         
+          <Route path="/Quiz">
+           <Quiz />
+
+           
+
+          </Route>
           <Route path="/SignUp">
             <SignUp />
           </Route>
