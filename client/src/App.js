@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
+
 import Home from '../src/components/homepage/Pages/Home';
 import About from '../src/components/homepage/About';
 import SignUp from './components/homepage/Pages/SignUp';
@@ -9,7 +11,7 @@ import './App.css';
 //import Quiz from '../src/components/homepage/Pages/Quiz';
 import Quiz from '../src/components/homepage/Pages/Quiz_New';
 
-
+const[user, setUser] = useState(null);
 
 
 

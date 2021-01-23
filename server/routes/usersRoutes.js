@@ -37,4 +37,38 @@ module.exports = (app) => {
       user,
     });
   });
+
+  app.post('/login', async (req, res) => {
+    const {userName} = req.body;
+    console.log(req.body);
+
+    const user = await User.find({'user_name': userName});
+    console.log(userName);
+
+
+    return res.status(200).send({
+      error:false,
+      user,
+      
+    })
+  }
+  )
+
+  app.get(`/api/user/:id`, async (req, res) => {
+  const{id} = req.params;
+  const user = await User.findByIdAndUpdate(id, req.query, function(error,result){
+
+    return res.status(200).send({
+      error:false,
+      user:result,
+    
+    })
+  });
+
+
+ })
+
+
+
+ 
 };

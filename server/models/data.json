@@ -2,21 +2,25 @@
     {
         "first_name": "Gary",
         "last_name": "McPherson ",
-        "location": "London"
+        "location": "London",
+        "user_name": "Gary.M"
     },
     {
         "first_name": "Charlene",
         "last_name": "Hunter ",
-        "location": "London"
+        "location": "London",
+        "user_name": "C.H"
     },
     {
         "first_name": "Tanya",
         "last_name": "Powell ",
-        "location": "London"
+        "location": "London",
+        "user_name": "T.P"
     },
     {
         "first_name": "Oyin",
         "last_name": "Adebayo ",
-        "location": "Birmingham"
+        "location": "Birmingham",
+        "user_name": "O.A"
     }
 ]

@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import './Quiz.css';
 
+
+// const[setUser, user] =useState(null)
+
 function Quiz() {
 	const questions = [
 		{
@@ -81,5 +84,7 @@ function Quiz() {
 		</div>
 	);
 }
+
+
 
 export default Quiz;
