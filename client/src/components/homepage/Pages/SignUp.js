@@ -7,7 +7,7 @@ import "./SignUp.css";
 
 export default function Login() {
 
-  const [userName, setUsername] = useState(setUser)
+const [userName, setUsername] = useState()
 
   const history = useHistory();
  

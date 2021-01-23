@@ -11,7 +11,7 @@ import './App.css';
 //import Quiz from '../src/components/homepage/Pages/Quiz';
 import Quiz from '../src/components/homepage/Pages/Quiz_New';
 
-const[user, setUser] = useState(null);
+// const[user, setUser] = useState(null);
 
 
 

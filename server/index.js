@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
-// IMPORT YOUR MODELS
+
 require('./models/Users');
 
 const app = express();
@@ -20,7 +20,7 @@ mongoose.connect(
 
 app.use(bodyParser.json());
 app.use(cors());
-// IMPORT YOUR ROUTES
+
 require('./routes/usersRoutes')(app);
 
 const PORT = process.env.PORT || 3001;

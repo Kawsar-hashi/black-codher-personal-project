@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import './Quiz.css';
 
 
-// const[setUser, user] =useState(null)
+
+
 
 function Quiz() {
 	const questions = [
@@ -12,11 +13,11 @@ function Quiz() {
 				{ answerText: 'Bey-hive', isCorrect: false },
 				{ answerText: 'The Bees', isCorrect: false },
 				{ answerText: 'Beehive', isCorrect: true },
-				{ answerText: 'The Waspa', isCorrect: false },
+				{ answerText: 'The Wasps', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'How many times did Ross Geller get dovorced on Friends?',
+			questionText: 'How many times did Ross Geller get divorced on Friends?',
 			answerOptions: [
 				{ answerText: '5 times', isCorrect: false },
 				{ answerText: '3 times', isCorrect: true },
@@ -46,7 +47,8 @@ function Quiz() {
 
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);
-	const [score, setScore] = useState(0);
+    const [score, setScore] = useState(0);
+    
 
 	const handleAnswerOptionClick = (isCorrect) => {
 		if (isCorrect) {
@@ -61,7 +63,7 @@ function Quiz() {
 		}
 	};
 	return (
-		<div className='app'>
+		<div className='quiz'>
 			{showScore ? (
 				<div className='score-section'>
 					You scored {score} out of {questions.length}
