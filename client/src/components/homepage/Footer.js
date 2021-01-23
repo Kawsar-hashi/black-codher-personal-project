@@ -33,7 +33,7 @@ function Footer() {
           </div>
          
         </div>
-        <div className='footer-link-wrapper'>
+        <div className='footer-link-wrapper'>  
           <div class='footer-link-items'>
             <h2>Videos</h2>
             
