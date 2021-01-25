@@ -8,5 +8,6 @@
 }
 
 .container-about {
-    background-color: black;
+    background-color: grey;
+    border:black
 }

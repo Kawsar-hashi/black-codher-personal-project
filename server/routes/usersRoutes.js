@@ -42,7 +42,7 @@ module.exports = (app) => {
     const {userName} = req.body;
     console.log(req.body);
 
-    const user = await User.find({'user_name': userName});
+    const user = await User.findOne({'user_name': userName});
     console.log(userName);
 
 
@@ -61,6 +61,7 @@ module.exports = (app) => {
     return res.status(200).send({
       error:false,
       user:result,
+      
     
     })
   });

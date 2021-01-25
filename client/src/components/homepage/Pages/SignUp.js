@@ -5,7 +5,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import "./SignUp.css";
 
-export default function Login() {
+export default function Login(props) {
 
 const [userName, setUsername] = useState()
 
@@ -23,7 +23,9 @@ const [userName, setUsername] = useState()
         },
         body: JSON.stringify({ 'userName': userName })
       }).then(res => res.json()).then(res => {
-        // history.push("/");
+          props.setUser(res.user)
+          
+       history.push("/");
       }
     )
 

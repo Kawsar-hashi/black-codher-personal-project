@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useState} from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 
@@ -11,17 +11,17 @@ import './App.css';
 //import Quiz from '../src/components/homepage/Pages/Quiz';
 import Quiz from '../src/components/homepage/Pages/Quiz_New';
 
-// const[user, setUser] = useState(null);
-
-
 
 function App() {
+
+  const[user, setUser] = useState(null);
   return (
     <Router>
+      {/* {user.first_name} */}
       <div>
         <nav>
           <ul>
-              <Navbar />
+              <Navbar user={user} setUser={setUser}  />
             {/* <li>
               <Link to="/">Home</Link>
             </li>
@@ -48,7 +48,7 @@ function App() {
            <About />
           </Route>
           <Route exact path="/SignUp">
-          <SignUp />
+          <SignUp setUser={setUser} />
           </Route>
           <Route path="/Quiz">
            <Quiz />

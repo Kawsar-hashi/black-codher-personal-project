@@ -5,7 +5,7 @@ import './Quiz.css';
 
 
 
-function Quiz() {
+function Quiz(props) {
 	const questions = [
 		{
 			questionText: 'What is the name of Beyonce`s fangroup?',
@@ -59,6 +59,16 @@ function Quiz() {
 		if (nextQuestion < questions.length) {
 			setCurrentQuestion(nextQuestion);
 		} else {
+            //send a get request via fetch to update the times played and score 
+            //when we recieve user back we need to pull setUser again.{}
+            fetch('http://localhost:3001/user/api/props.user.id', {
+      
+      }).then(res => res.json()).then(res => {
+          props.setUser(res.user)
+          
+  
+      }
+    )
 			setShowScore(true);
 		}
 	};

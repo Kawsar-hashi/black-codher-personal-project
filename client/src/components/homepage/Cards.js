@@ -7,7 +7,7 @@ function Cards() {
         <div className='cards'>
             <h1>Choose below what you want to play</h1>
             <div className="cards__container">
-                <div classname="cards__wrapper">
+                <div className="cards__wrapper">
                     <ul className="cards__items">
                        <CardItem 
                        src="images/img-9.jpg"

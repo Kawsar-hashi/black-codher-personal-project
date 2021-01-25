@@ -4,7 +4,7 @@ import { Button } from './Button';
 import './NavBar.css';
 
 
-function NavBar() {
+function NavBar(props) {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
 
@@ -63,7 +63,10 @@ function NavBar() {
             
         </li>
     </ul>
-    {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+    {button && !props.user && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+    {/* {props.user && <span> Hello {props.user.first_name}</span>} */}
+    {props.user && <Button onClick={() => props.setUser(null)} buttonStyle='btn--outline'>Log Out</Button>} 
+  
         </div>
 
         </nav>
