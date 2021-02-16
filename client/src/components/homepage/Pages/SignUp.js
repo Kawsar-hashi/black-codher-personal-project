@@ -10,8 +10,6 @@ export default function Login(props) {
 const [userName, setUsername] = useState()
 
   const history = useHistory();
- 
- 
 
   function handleSubmit(event) {
       
@@ -27,9 +25,7 @@ const [userName, setUsername] = useState()
           
        history.push("/");
       }
-    )
-
-  }
+    )}
 
   return (
     <div className="Login">

@@ -8,26 +8,6 @@ import Home from '../src/components/homepage/Pages/Home.js'
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ReactDOM.render(
   <React.StrictMode>
     <App />

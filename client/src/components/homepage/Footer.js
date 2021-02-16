@@ -8,7 +8,7 @@ function Footer() {
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-          Join the SETLE family and get notified to te latest fun!
+          Join the SETLE family and get notified to the latest fun!
         </p>
         <p className='footer-subscription-text'>
           You can unsubscribe at any time.
